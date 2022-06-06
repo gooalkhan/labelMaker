@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="./css/nanumbarungothic.css" rel='stylesheet' type='text/css'>
+    <link href="./css/index.css" rel="stylesheet" type='text/css'>
+    <script src="./js/jquery-3.0.0.js"></script>
+    <script src="./js/raphael.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="split left">
+        <div class='pad'>
+            <h1>한글표시사항 제작기</h1>
+            <h3>사이즈:
+                가로 <input type="text" name="width" style="width:50px"> mm x
+                세로 <input type="text" name="height" style="width:50px"> mm <br><br>
+            </h3>
+            <div class="form">
+                <div class="field">
+                    <input type="text" class="key" value="제품명">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="특정 성분명 및 햠량">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="식품유형">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="업소명">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="소재지">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="제조사명">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="유통기한">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="내용량">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="원재료명">
+                    <textarea name="" class="value" rows="10" value=""></textarea>
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="알레르기">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="내포장재질">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="품목보고번호">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed" checked>
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="보관방법">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed">
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="주의사항">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed">
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="부정불량식품신고표시">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed">
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="기타알레르기">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed">
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="기타표시사항">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed">
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="방사선조사원료">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed">
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+                <div class="field">
+                    <input type="text" class="key" value="유전자변형원료">
+                    <input type="text" class="value" value="">
+                    머릿말표시
+                    <input type="checkbox" class="isDisplayed">
+                    <button class="up">↑</button>
+                    <button class="down">↓</button>
+                </div>
+            </div>
+            <button id="append">항목추가</button>
+            <button id="test">테스트데이터</button>
+            <button id="run">실행</button>
+        </div>
+    </div>
+    <div class="split right">
+        <div class='pad'>
+            <div id="canvas">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
